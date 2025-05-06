@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>College Registration</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Simple CSS -->
+  <style>
+    body {
+      background-color: #929393;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .registration-box {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .registration-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Registration Form -->
+  <div class="registration-box">
+    <h2>College Registration</h2>
+    <form>
+      <!-- Full Name -->
+      <div class="mb-3">
+        <label>Full Name</label>
+        <input type="text" class="form-control" placeholder="Enter your full name" required>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label>Email</label>
+        <input type="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+
+      <!-- Phone Number -->
+      <div class="mb-3">
+        <label>Phone Number</label>
+        <input type="tel" class="form-control" placeholder="Enter your phone number" required>
+      </div>
+
+      <!-- Gender -->
+      <div class="mb-3">
+        <label>Gender</label>
+        <select class="form-select" required>
+          <option value="" disabled selected>Select gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <!-- Course -->
+      <div class="mb-3">
+        <label>Course</label>
+        <input type="text" class="form-control" placeholder="e.g., B.Tech, BSc, B.Com" required>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary w-100">Register</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
